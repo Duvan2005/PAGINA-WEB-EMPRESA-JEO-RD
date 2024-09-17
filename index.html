@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEO RD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Color de fondo general */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #004d99; /* Color de fondo del encabezado */
+            color: #ffffff; /* Color del texto en el encabezado */
+        }
+        .logo {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        nav {
+            background-color: #003366; /* Color de fondo de la navegación */
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff; /* Color del texto en la navegación */
+        }
+        section {
+            padding: 50px 20px;
+            display: none;
+            background-color: #ffffff; /* Color de fondo de las secciones */
+            border-bottom: 2px solid #004d99; /* Línea inferior de las secciones */
+        }
+        footer {
+            background-color: #003366; /* Color de fondo del pie de página */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff; /* Color del texto en el pie de página */
+        }
+        .active {
+            display: block;
+        }
+        .service-box {
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f0f8ff; /* Color de fondo de las cajas de servicio */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .service-box h3 {
+            margin-top: 0;
+            color: #003366; /* Color del texto en las cajas de servicio */
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Color de fondo del formulario */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #003366; /* Color del texto en las etiquetas del formulario */
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #004d99; /* Color del botón */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #003366; /* Color del botón al pasar el ratón */
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-section img {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .inicio-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .inicio-images img {
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        .mission-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .mission-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        .vision-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .vision-content img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGspYKNWSbUql-geWWG_89quQlWz2QGfmCG593DDD2cNOOeSelNsB2OBcWpYOilVnDywGqanmx6M5uCMY9RsrVezb906yIV9KT5nqi2vTRS0luonaq5NQG417mGFGQ_vXAx2eTF8ENRKUtXt8K0w_QjZcXHU9QlvTrxjxBCby8UQhmZvT-DRGMNwRV0prz/s320/img-1.png" alt="Logo de la empresa">
+        <h1>JEO RD</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#mision">Misión</a>
+        <a href="#vision">Visión</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="active">
+        <h2>Inicio</h2>
+        <p>En JEO RD, entendemos que la tecnología es el corazón de la productividad moderna, y estamos aquí para mantenerla latiendo con fuerza. Fundada con el propósito de ofrecer soluciones de alta calidad en mantenimiento de equipos de cómputo y venta de partes, nuestra empresa se dedica a garantizar que tu infraestructura tecnológica funcione de manera eficiente y sin interrupciones.</p>
+        
+        <!-- Sección de imágenes -->
+        <div class="inicio-images">
+            <img src="https://img.freepik.com/foto-gratis/retrato-tecnico-sexo-masculino-feliz-que-trabaja-placa-madre-ordenador_23-2147923494.jpg" alt="Técnico trabajando en placa madre">
+            <img src="https://www.laneros.com/attachments/1-jpeg.404861/" alt="Componentes electrónicos">
+        </div>
+    </section>
+
+    <section id="mision">
+        <h2>Misión</h2>
+        <div class="mission-content">
+            <img src="https://ammitechnologies.com/wp-content/uploads/2022/03/1026-930x620.jpg" alt="Imagen de Misión">
+            <p>En JEO RD, nuestra misión es proporcionar soluciones integrales y confiables para el mantenimiento y reparación de equipos de cómputo, así como ofrecer partes y componentes de la más alta calidad. Nos dedicamos a garantizar que nuestros clientes experimenten un rendimiento óptimo de sus sistemas tecnológicos a través de un servicio técnico especializado y atención personalizada. Comprometidos con la innovación y la excelencia, buscamos superar las expectativas de nuestros clientes, asegurando la continuidad de sus operaciones y la satisfacción total.</p>
+        </div>
+    </section>
+
+    <section id="vision">
+        <h2>Visión</h2>
+        <div class="vision-content">
+            <img src="https://gestionhumanaplus.com/wp-content/uploads/2021/09/liderazgo-digital.png" alt="Imagen de Visión">
+            <p>En JEO RD, nuestra visión es convertirnos en el referente líder en soluciones de mantenimiento y venta de partes para equipos de cómputo en la región. Aspiramos a ser la primera opción para nuestros clientes, destacándonos por nuestra excelencia técnica, innovación continua y un compromiso inquebrantable con la satisfacción del cliente.</p>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="service-box">
+            <h3>Mantenimiento y Reparación de Equipos de Cómputo</h3>
+            <ul>
+                <li>Diagnóstico y Solución de Problemas: Identificamos y resolvemos fallas en hardware y software, asegurando que tu equipo vuelva a funcionar con la mayor eficiencia posible.</li>
+                <li>Mantenimiento Preventivo: Realizamos chequeos periódicos y actualizaciones para prevenir problemas futuros y prolongar la vida útil de tus equipos.</li>
+                <li>Reparación de Componentes: Reparamos o reemplazamos partes defectuosas, incluyendo discos duros, tarjetas gráficas, placas base, y más.</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <h3>Optimización de Sistemas</h3>
+            <ul>
+                <li>Mejora del Rendimiento: Ajustamos y configuramos tu sistema para maximizar la velocidad y eficiencia, eliminando cuellos de botella y optimizando el uso de recursos.</li>
+                <li>Actualización de Software: Instalamos y configuramos las últimas versiones de software y sistemas operativos para asegurar la compatibilidad y el rendimiento óptimo.</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <h3>Venta de Partes y Accesorios</h3>
+            <ul>
+                <li>Componentes de Hardware: Ofrecemos una amplia gama de piezas, incluyendo procesadores, memorias RAM, discos duros, unidades de estado sólido (SSD), tarjetas gráficas y más.</li>
+                <li>Accesorios y Periféricos: Disponemos de teclados, ratones, monitores, impresoras y otros accesorios necesarios para complementar y mejorar tu experiencia tecnológica.</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <h3>Consultoría y Asesoramiento Tecnológico</h3>
+            <ul>
+                <li>Evaluación de Necesidades: Asesoramos a nuestros clientes sobre las mejores opciones de hardware y software según sus necesidades específicas y presupuesto.</li>
+                <li>Soluciones Personalizadas: Proporcionamos recomendaciones y soluciones a medida para optimizar la infraestructura tecnológica de empresas y particulares.</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <h3>Instalación y Configuración</h3>
+            <ul>
+                <li>Instalación de Equipos: Configuramos y ponemos en marcha nuevos equipos, asegurándonos de que estén listos para su uso inmediato.</li>
+                <li>Configuración de Redes: Establecemos y optimizamos redes locales (LAN) y conexiones a Internet para mejorar la conectividad y el rendimiento.</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <h3>Servicio Técnico Remoto</h3>
+            <ul>
+                <li>Diagnóstico en Línea: Brindamos soporte remoto para identificar y resolver problemas sin la necesidad de una visita presencial.</li>
+                <li>Soporte Telefónico y Chat: Ofrecemos asistencia técnica inmediata a través de canales de soporte remoto para resolver dudas o problemas técnicos.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-section">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/006/683/609/small/set-of-business-information-line-icon-contacts-for-web-support-service-profile-symbol-illustration-vector.jpg" alt="Íconos de contacto">
+            <div class="contact-info">
+                <ul>
+                    <li><strong>Teléfonos:</strong></li>
+                    <li>+1 (809) 123-4567</li>
+                    <li>+1 (809) 765-4321</li>
+                </ul>
+                <ul>
+                    <li><strong>Correos:</strong></li>
+                    <li>Ventas: ventas@jeord.com</li>
+                    <li>Soporte Técnico: soporte@jeord.com</li>
+                </ul>
+                <ul>
+                    <li><strong>Ubicación:</strong></li>
+                    <li>Calle 123, Ciudad, País</li>
+                </ul>
+            </div>
+        </div>
+        <h3>Formulario de Contacto</h3>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 JEO RD. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para mostrar la sección activa y ocultar las demás
+            function showSection(id) {
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                const section = document.querySelector(id);
+                if (section) {
+                    section.classList.add('active');
+                }
+            }
+
+            // Verificar si hay un hash en la URL al cargar la página
+            let hash = window.location.hash;
+            if (hash) {
+                showSection(hash); // Mostrar la sección basada en el hash
+            } else {
+                showSection('#inicio'); // Si no hay hash, mostrar la sección de inicio
+            }
+
+            // Agregar manejadores de eventos a los enlaces de navegación
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+                    const targetId = this.getAttribute('href');
+                    showSection(targetId);
+                    history.pushState(null, null, targetId); // Cambiar el hash en la URL sin recargar la página
+                });
+            });
+
+            // Manejar el cambio manual del hash en la URL (al abrir en una nueva pestaña o manualmente)
+            window.addEventListener('hashchange', function() {
+                showSection(window.location.hash);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
